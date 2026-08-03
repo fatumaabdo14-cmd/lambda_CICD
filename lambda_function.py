@@ -9,7 +9,7 @@ def lambda_handler(event, context):
     return {
         'statusCode': 200,
         'body': json.dumps({
-            'message': f'Hello, {name}!',
+            'message': f'Hello {name}! Welcome to Lambda CICD Pipeline!',
             'source': 'Lambda CICD Pipeline'
         })
     }
