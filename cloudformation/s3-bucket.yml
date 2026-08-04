@@ -1,0 +1,13 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Description: 'S3 bucket for CICD pipeline artifacts'
+
+Resources:
+  DeploymentBucket:
+    Type: AWS::S3::Bucket
+    Properties:
+      BucketName: lambda-cicd-artifacts-fatumaabdo14
+
+Outputs:
+  BucketName:
+    Description: Name of the S3 bucket
+    Value: !Ref DeploymentBucket
